@@ -6,7 +6,7 @@ For any popular product or service, reviews are abundant. This abundance of revi
 
 The intense competition in the hotel industry explains why, in recent years, they have been experimenting with the implementation of robots and AI. The hotel industry is always looking for the next innovation to maximize customer satisfaction cost-effectively. It may sound like a science fiction experience to arrive at a hotel in a driverless taxi, check-in at a reception desk staffed by an android, or have a robot carrier take your bags to your room. However, this is not science fiction but tools that hotels are looking to use. Neild from CNN explains that robots are now making an appearance in hotels around the planet - and more are on the way. Marriott hotel in Ghent, Belgium, uses a humanoid robot named Mario, who has been working at the hotel since 2015. Mario is able to welcome his guests in 19 different languages and guards the buffets as well. Even cruise ships are transitioning to similar technologies as Royal Caribbean installed cocktail-mixing robot bartenders on its cruise ships. 
 
-![Robot Image](https://user-images.githubusercontent.com/77026848/210668282-021e575b-5f03-45f3-b68a-b43f0b3197fe.jpeg)
+![Robot Image](https://user-images.githubusercontent.com/77026848/210668602-32e40577-3695-4a5c-8717-faa994c8943a.jpeg)
 
 The Covid-19 pandemic also opened doors to “robot-driven” hotels, as this technology developed sudden importance due to the new demand for minimal human contact interactions with customers. With the accelerated adoption of this technology due to the pandemic, researchers have taken a special interest in the impact robots have on customer satisfaction. This includes researchers Zhong and Verma at Cornell University, who conducted an exploratory study of robots used among hotels in China. They sought to determine whether the guests were pleased with the robots’ assistance. According to their findings, it appears robots are linked to an increase in customer satisfaction. Zhong and Verma administered a survey on 94 guests, half men and half women, across six hotels. They discovered that guests had high expectations for the robots and believed staying in a “robot hotel” would be more cost-effective. Guests felt their stay was more interesting and convenient. But how did the robots do overall in this experiment? They concluded that while not perfect, the robots were also not terrible! Some features were used more frequently by customers than others. For example, turning the lights on and off, turning on the TV, and playing music. Ultimately, nearly all guests rated their overall satisfaction with the robot room as a four or five on a five-point scale. 
 
@@ -16,7 +16,7 @@ With new advancements in text analytics and NLP, we are able to mine for additio
 
 This dataset contains 32,829 hotel reviews scraped from the Trip Advisor website.
 
-![Tripadvisor-Logo](https://user-images.githubusercontent.com/77026848/210668433-03ad7b68-3b43-449c-9b76-cfc5bc1ae725.png)
+![Tripadvisor-Logo](https://user-images.githubusercontent.com/77026848/210668639-5282daa0-8e18-4559-a271-3abd2606d483.png)
 
 As a part of data cleaning, text pre-processing was required before feature engineering and modeling. Text pre-processing is used to bring a standard format to the text. This standardization across a document corpus helps build meaningful features and reduce noise that can be instigated by certain text components, such as irrelevant symbols or special characters. In this project, we applied various text processing skillsets, including pandas, regular expressions, stop word removal, POS tagging, stemming, and lemmatization.
 
@@ -51,7 +51,7 @@ FPR (False Positive Rate): FP/(FP+TN)
 
 Given the rating score distribution, we can see that hotels are generally doing well. Positive reviews (ratings of 4 or 5) account for 82% of the total reviews. However, we would like to know the factors that contribute to a positive or negative experience. And further, of those factors, what can be leveraged or improved? In answering these questions, we hope to acquire a better understanding of customers and put forward identified business opportunities to stakeholders.
 
-{{< figure src="/images/general findings 2.png" >}}
+<img width="738" alt="general findings 2" src="https://user-images.githubusercontent.com/77026848/210668677-595eb130-ea40-4736-ad19-a112adc84a51.png">
 
 The word clouds above display a comparison of the robot and human datasets for high and low reviews. In all word clouds, most people seem to base their satisfaction on their stay, room, time, and staff/robot interactions. It appears guests value having a clean room, as the word clean appears in both positive word clouds. Interactions with staff and/or robots also seem to be valued by guests. It is crucial that staff and robots appear friendly and helpful to guests. Time is another significant word in all word clouds. Guests seem to value their time and care about how long interactions take when they need something. Check was another word present in all word clouds, check is referring to check in and check out. These seem to be influential touchpoints with guests, and this makes sense as it is their initial and last impression of the hotel.
 
@@ -59,8 +59,8 @@ The word clouds above display a comparison of the robot and human datasets for h
 
 In the graphs below, the x-axis shows polarity and the y-axis shows subjectivity. Polarity tells how positive or negative the text is. The subjectivity tells how subjective or opinionated the text is. The green dots that lie on the vertical line are the “neutral” reviews, the red dots on the left are the “negative” reviews, and the blue dots on the right are the “positive” reviews. Bigger dots indicate more subjectivity. We see that positive reviews are more than the negatives in both the human services and robot services datasets. While it is a smaller sample, this is especially true for the robot services dataset. This reveals that not only can our analysis be used for monitoring, but perhaps beyond that used as an argument to convince managers to use robots in their hotels.
 
-{{< figure src="/images/general findings 3.png" >}}
-{{< figure src="/images/general findings 4.png" >}}
+<img width="656" alt="general findings 3" src="https://user-images.githubusercontent.com/77026848/210668699-813d604f-0dc5-4b39-9342-c303f7ea7be9.png">
+<img width="664" alt="general findings 4" src="https://user-images.githubusercontent.com/77026848/210668712-7a48745f-111c-415c-82cf-17fd8be28f3a.png">
 
 ### Machine Learning, Deep Learning, Sentiment Scoring Model Performance Comparison
 
@@ -68,19 +68,19 @@ As mentioned previously, after conducting our sentiment analysis in Textblob, we
 
 Human Services - CV
 
-{{< figure src="/images/human services - cv.png" >}}
+<img width="729" alt="human services - cv" src="https://user-images.githubusercontent.com/77026848/210668741-1ffa6e5b-8e16-4119-ab33-f5aee611c4e9.png">
 
 Human Services - TF-IDF
 
-{{< figure src="/images/human services - tfidf.png" >}}
+<img width="724" alt="human services - tfidf" src="https://user-images.githubusercontent.com/77026848/210668753-1658411b-c008-4707-a6cf-e151df471fbd.png">
 
 Robot Services - CV
 
-{{< figure src="/images/robot services - cv.png" >}}
+<img width="728" alt="robot services - cv" src="https://user-images.githubusercontent.com/77026848/210668763-9f21e027-554d-4b7d-906f-261f0da181c0.png">
 
 Robot Services - TF-IDF
 
-{{< figure src="/images/robot services - tfidf.png" >}}
+<img width="726" alt="robot services - tfidf" src="https://user-images.githubusercontent.com/77026848/210668784-c41ed3ed-ede5-4b2c-a1f8-79e26809e140.png">
 
 
 The above tables show the performance of each machine learning model when utilizing either Countvectorizer or TF-IDF vectorizer in predicting high or low ratings in either the human or robot services datasets. For each field, the highest accuracy, precision, recall, F1-score, and AUC metrics are indicated by the “Best Score” column. The highest-performing model for each field fell mostly between the range of 0.7 to 9.0, reflecting relatively accurate classification. For the human services dataset, the Logistic Regression model, with TF-IDF vectorizer, was the best model for predicting high or low rating with an AUC of 0.864 and an accuracy score of 0.864. For the robot services dataset, the Support Vector classifier model, with TF-IDF vectorizer, was also the best model for predicting high or low rating with an AUC of 0.775 and an accuracy score of 0.799. Therefore, of our machine learning models, Logistic Regression was our best performing model for the human dataset and the Support Vector classifier was our best performing model for the robot dataset.
@@ -97,11 +97,11 @@ For our deep learning models, we included BERT, Glove, Word2Vec, and FastText. T
 
 Human Services
 
-{{< figure src="/images/human services - senti.png" >}}
+<img width="340" alt="human services - deep" src="https://user-images.githubusercontent.com/77026848/210668830-c89b399a-8874-4433-b05e-366bd8a2f388.png">
 
 Robot Services 
 
-{{< figure src="/images/robot services - senti.png" >}}
+<img width="340" alt="robot services - deep" src="https://user-images.githubusercontent.com/77026848/210668852-362b9402-a4c0-4122-a9c6-c06f67938456.png">
 
 Finally, for our sentiment scoring models, we included SentiWordNet and Vader. The above tables show the performance of each of our sentiment scoring models in predicting high or low ratings in either the human or robot services datasets. For each field, the highest accuracy, precision, recall, F1-score, and AUC metrics are indicated by the “Best Score” column. The Vader sentiment scoring model was the highest performing on each metric for both datasets. For the human services dataset, the Vader model was the best model for predicting high or low rating with an accuracy score of 0.866. For the robot services dataset, the Vader model was also the best model for predicting high or low rating with an accuracy score of 0.904. While BERT remains the superior predicting model for the human services dataset, it appears Vader is the best predicting model for the Robot Services dataset. In conclusion, we were able to find a model that performed extremely well for both datasets, with scores all above .90. This reflects our ability to classify high or low ratings accurately.
 
