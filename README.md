@@ -1,5 +1,5 @@
 # Hotel Service Industry - Human vs Robot
-# Text Mining &amp; Social Media Analytics Final Project
+**Text Mining &amp; Social Media Analytics Final Project**
 
 ## Background
 For any popular product or service, reviews are abundant. This abundance of reviews rings especially true for the fiercely competitive hotel industry. With an overload of feedback, it is difficult for hotel managers to keep track of and manage customer opinions. To counter this problem, we propose a supervised machine learning approach using unigram features (Countvectorizer and TF-IDF) to create polarity classification of hotel reviews. We will test the performance and compare multiple machine learning, deep learning, and sentiment scoring models to recommend the most effective model for building a sentiment monitoring system for hotel managers. With the help of our best-performing model, this screening system will help managers automatically detect, in real-time, the highest number of true positives and negatives based on review ratings (high or low).
