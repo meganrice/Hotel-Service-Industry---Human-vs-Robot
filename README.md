@@ -16,7 +16,7 @@ With new advancements in text analytics and NLP, we are able to mine for additio
 
 This dataset contains 32,829 hotel reviews scraped from the Trip Advisor website.
 
-{{< figure src="/images/Tripadvisor-Logo.png" >}}
+![Tripadvisor-Logo](https://user-images.githubusercontent.com/77026848/210668433-03ad7b68-3b43-449c-9b76-cfc5bc1ae725.png)
 
 As a part of data cleaning, text pre-processing was required before feature engineering and modeling. Text pre-processing is used to bring a standard format to the text. This standardization across a document corpus helps build meaningful features and reduce noise that can be instigated by certain text components, such as irrelevant symbols or special characters. In this project, we applied various text processing skillsets, including pandas, regular expressions, stop word removal, POS tagging, stemming, and lemmatization.
 
@@ -47,7 +47,7 @@ FPR (False Positive Rate): FP/(FP+TN)
 
 ### General Patterns
 
-{{< figure src="/images/General findings 1.png" >}}
+<img width="719" alt="General findings 1" src="https://user-images.githubusercontent.com/77026848/210668527-acef6043-1988-46de-9891-2ff05cc6aad2.png">
 
 Given the rating score distribution, we can see that hotels are generally doing well. Positive reviews (ratings of 4 or 5) account for 82% of the total reviews. However, we would like to know the factors that contribute to a positive or negative experience. And further, of those factors, what can be leveraged or improved? In answering these questions, we hope to acquire a better understanding of customers and put forward identified business opportunities to stakeholders.
 
