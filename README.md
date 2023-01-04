@@ -87,21 +87,21 @@ The above tables show the performance of each machine learning model when utiliz
 
 Human Services
 
-{{< figure src="/images/human services - deep.png" >}}
+<img width="340" alt="human services - deep" src="https://user-images.githubusercontent.com/77026848/210668830-c89b399a-8874-4433-b05e-366bd8a2f388.png">
 
 Robot Services
 
-{{< figure src="/images/robot services - deep.png" >}}
+<img width="340" alt="robot services - deep" src="https://user-images.githubusercontent.com/77026848/210668852-362b9402-a4c0-4122-a9c6-c06f67938456.png">
 
 For our deep learning models, we included BERT, Glove, Word2Vec, and FastText. The above tables show the performance of each of our word embeddings models in predicting high or low ratings in either the human or robot services datasets. For each field, the highest accuracy, precision, recall, F1-score, and AUC metrics are indicated by the “Best Score” column. The BERT word embeddings model was the highest performing on each metric in the human services dataset and for accuracy and AUC in the robot services dataset. For each field, we found that for the most part the word embeddings outperformed the traditional machine learning Countvectorizer and TF-IDF approach. Overall, the BERT model performed extremely well, never scoring below 0.857 on any metric and scoring over 0.90 in many cases. For the human services dataset, the BERT model was the best model for predicting high or low rating with an AUC of 0.967 and an accuracy score of 0.967. For the robot services dataset, the BERT model was also the best model for predicting high or low rating with an AUC of 0.868 and an accuracy score of 0.868. In each dataset, BERT was the highest-performing option thus far.
 
 Human Services
 
-<img width="340" alt="human services - deep" src="https://user-images.githubusercontent.com/77026848/210668830-c89b399a-8874-4433-b05e-366bd8a2f388.png">
+<img width="322" alt="human services - senti" src="https://user-images.githubusercontent.com/77026848/210669000-b34d4d7f-8c7a-40dc-86b6-f45fb43ed110.png">
 
 Robot Services 
 
-<img width="340" alt="robot services - deep" src="https://user-images.githubusercontent.com/77026848/210668852-362b9402-a4c0-4122-a9c6-c06f67938456.png">
+<img width="320" alt="robot services - senti" src="https://user-images.githubusercontent.com/77026848/210669015-e9773f14-19dc-42fb-96d1-a8f477bb05f9.png">
 
 Finally, for our sentiment scoring models, we included SentiWordNet and Vader. The above tables show the performance of each of our sentiment scoring models in predicting high or low ratings in either the human or robot services datasets. For each field, the highest accuracy, precision, recall, F1-score, and AUC metrics are indicated by the “Best Score” column. The Vader sentiment scoring model was the highest performing on each metric for both datasets. For the human services dataset, the Vader model was the best model for predicting high or low rating with an accuracy score of 0.866. For the robot services dataset, the Vader model was also the best model for predicting high or low rating with an accuracy score of 0.904. While BERT remains the superior predicting model for the human services dataset, it appears Vader is the best predicting model for the Robot Services dataset. In conclusion, we were able to find a model that performed extremely well for both datasets, with scores all above .90. This reflects our ability to classify high or low ratings accurately.
 
